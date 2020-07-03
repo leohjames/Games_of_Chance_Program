@@ -1357,10 +1357,6 @@ def roulette(guess, bet, choice = 1):
     if guess == 'straight':
         print('Straight')
         print(outcome)
-        if outcome == 37:
-            outcome = '0'
-        if outcome == 38:
-            outcome = '00'
         if outcome == choice:
             money = money + (money_bet * 36)
             print('Winner! Your winnings are now at $' + format(money, '.2f'))
